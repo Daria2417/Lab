@@ -100,7 +100,7 @@
                           href="https://kubsu.ru/" alt="КубГУ" title="КубГУ">
                     
                     <area shape="circle" coords="300,100,80"
-                          href="https://www.kubsu.ru/ru" alt="КубГУ (круг)" title="КубГУ (круг)">
+                          href="https://kubsu.ru/ru/abiturient" alt="КубГУ (круг)" title="КубГУ (круг)">
                 </map>
             </div>
         </li>
@@ -144,13 +144,13 @@
         <label>
             ФИО:
 
-            <input type="text" name="fullname" placeholder="Введите ваше ФИО" required>
+            <input type="text" name="fullname" placeholder="Введите ваше ФИО" required pattern ="^[A-Za-zA-Яа-яЁё\s]+$" title="Пожалуйста используйте буквы и пробелы">
         </label>
         <br>
         <label>
             Телефон:
 
-            <input type="tel" name="phone" plКубГУkubsu.ruaceholder="+7 (___) ___-__-__">
+            <input type="tel" name="phone" plКубГУkubsu.ruaceholder="+7 (___) ___-__-__" pattern = "[0-9+]{10,}" title ="Неверный формат">
         </label>
         <br>
         <label>
@@ -162,7 +162,7 @@
         <label>
             Дата рождения:
 
-            <input type="date" name="birthdate" value="2000-01-01">
+            <input type="date" name="birthdate" value="2000-01-01" max="2008-09-23">
         </label>
         
         <div class="radio-group">
