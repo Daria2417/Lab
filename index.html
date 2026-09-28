@@ -10,136 +10,138 @@
     <!-- ---------- -->
     <header>
         <div class = "header - inner">
-            <a>
-                <img src=image.png>
-                     <tyle="width: 150px; vertical-align: middle;>
-            </a>
-            <span class = "site-name"> Название сайта</span>
-            <nav>
-                <a href = "https://daria2417.github.io/Lab/">ссылка 1</a>
-                <a href = "https://daria2417.github.io/Lab/">ссылка 2</a>
-                <a href = "https://daria2417.github.io/Lab/">ссылка 3</a>
+            <nav class="main-nav">
+                <a>
+                    <img src=image.png>
+                        <tyle="width: 150px; vertical-align: middle;>
+                </a>
+                <span class = "site-name"> Название сайта</span>
+                <nav>
+                    <a href = "https://daria2417.github.io/Lab/">ссылка 1</a>
+                    <a href = "https://daria2417.github.io/Lab/">ссылка 2</a>
+                    <a href = "https://daria2417.github.io/Lab/">ссылка 3</a>
+                </nav>
             </nav>
         </div>
     </header>
 
     <main class = "content">
+        <div class="content-wrapper">
+            <section class="links-section">
+            <h1>Задание 1</h1>
+            
+            <ul>
+                <li>
+                    <a href="http://kubsu.ru/">1. Абсолютная гиперссылка на главную страницу kubsu.ru (http)</a>
+                </li>
+                <li>
+                    <a href="https://kubsu.ru/">2. Абсолютная гиперссылка на главную страницу kubsu.ru (https)</a>
+                </li>
+                <li>
+                    3. Ссылка-изображение:
+                    <a href="https://kubsu.ru/">
+                        <img src=image.jpg
+                            style="width: 150px; vertical-align: middle;">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://daria2417.github.io.index.html">4. Сокращённая ссылка на внутреннюю страницу</a>
+                </li>
+                <li>
+                    <a href="https://daria2417.github.io/Lab/">5. Сокращённая ссылка на главную страницу</a>
+                </li>
+                <li>
+                    <a href="#form-section">6. Ссылка на фрагмент текущей страницы (переход к форме)</a>
+                </li>
+                <li>
+                    <a href="https://kubsu.ru/?param1=value1&param2=value2&param3=value3">
+                        7. Ссылка с тремя параметрами в URL
+                    </a>
+                </li>
+                <li>
+                    <a href="https://kubsu.ru/?id=123">8. Ссылка с параметром id в URL</a>
+                </li>
+                <li>
+                    <a href="page.html">9. Относительная ссылка на страницу в текущем каталоге</a>
+                </li>
+                <li>
+                    <a href="about/page.html">10. Относительная ссылка на страницу в каталоге about</a>
+                </li>
 
-    <!-- ---------- -->
-    <h1>Задание 1</h1>
-    
-    <ul>
-        <li>
-            <a href="http://kubsu.ru/">1. Абсолютная гиперссылка на главную страницу kubsu.ru (http)</a>
-        </li>
-        <li>
-            <a href="https://kubsu.ru/">2. Абсолютная гиперссылка на главную страницу kubsu.ru (https)</a>
-        </li>
-        <li>
-            3. Ссылка-изображение:
-            <a href="https://kubsu.ru/">
-                <img src=image.jpg
-                     style="width: 150px; vertical-align: middle;">
-            </a>
-        </li>
-        <li>
-            <a href="https://daria2417.github.io.index.html">4. Сокращённая ссылка на внутреннюю страницу</a>
-        </li>
-        <li>
-            <a href="https://daria2417.github.io/Lab/">5. Сокращённая ссылка на главную страницу</a>
-        </li>
-        <li>
-            <a href="#form-section">6. Ссылка на фрагмент текущей страницы (переход к форме)</a>
-        </li>
-        <li>
-            <a href="https://kubsu.ru/?param1=value1&param2=value2&param3=value3">
-                7. Ссылка с тремя параметрами в URL
-            </a>
-        </li>
-        <li>
-            <a href="https://kubsu.ru/?id=123">8. Ссылка с параметром id в URL</a>
-        </li>
-        <li>
-            <a href="page.html">9. Относительная ссылка на страницу в текущем каталоге</a>
-        </li>
-        <li>
-            <a href="about/page.html">10. Относительная ссылка на страницу в каталоге about</a>
-        </li>
+                <li>
+                    <a href="../page.html">11. Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+                </li>
 
-        <li>
-            <a href="../page.html">11. Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
-        </li>
+                <li>
+                    <a href="../../page.html">12. Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+                </li>
 
-        <li>
-            <a href="../../page.html">12. Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
-        </li>
+                <li>
+                    13. Контекстная ссылка в тексте абзаца:
+                    <p>
+                        Для получения подробной информации о поступлении
+                        перейдите на <a href="https://kubsu.ru/ru/abiturient">страницу абитуриента</a>
+                        официального сайта КубГУ.
+                    </p>
+                </li>
 
-        <li>
-            13. Контекстная ссылка в тексте абзаца:
-            <p>
-                Для получения подробной информации о поступлении
-                перейдите на <a href="https://kubsu.ru/ru/abiturient">страницу абитуриента</a>
-                официального сайта КубГУ.
-            </p>
-        </li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#История">
+                        14. Ссылка на фрагмент страницы стороннего сайта (история КубГУ в Википедии)
+                    </a>
+                </li>
 
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#История">
-                14. Ссылка на фрагмент страницы стороннего сайта (история КубГУ в Википедии)
-            </a>
-        </li>
+                <li>
+                    15. Ссылки из прямоугольных и круглых областей картинки:
+                    <div class="map-container">
+                        <img src=image.jpg
+                            usemap="#imagemap"
+                            style="width: 400px;">
+                        <map name="imagemap">
+                
+                            <area shape="rect" coords="0,0,200,200"
+                                href="https://kubsu.ru/" alt="КубГУ" title="КубГУ">
+                            
+                            <area shape="circle" coords="300,100,80"
+                                href="https://kubsu.ru/ru/abiturient" alt="КубГУ (круг)" title="КубГУ (круг)">
+                        </map>
+                    </div>
+                </li>
+                <li>
+                    <a href="">16. Ссылка с пустым href</a>
+                </li>
 
-        <li>
-            15. Ссылки из прямоугольных и круглых областей картинки:
-            <div class="map-container">
-                <img src=image.jpg
-                     usemap="#imagemap"
-                     style="width: 400px;">
-                <map name="imagemap">
-        
-                    <area shape="rect" coords="0,0,200,200"
-                          href="https://kubsu.ru/" alt="КубГУ" title="КубГУ">
-                    
-                    <area shape="circle" coords="300,100,80"
-                          href="https://kubsu.ru/ru/abiturient" alt="КубГУ (круг)" title="КубГУ (круг)">
-                </map>
-            </div>
-        </li>
-        <li>
-            <a href="">16. Ссылка с пустым href</a>
-        </li>
+                <li>
+                    <a>17. Ссылка без href</a>
+                </li>
 
-        <li>
-            <a>17. Ссылка без href</a>
-        </li>
+                <li>
+                    <a href="https://kubsu.ru/" rel="nofollow">
+                        18. Ссылка, по которой запрещён переход поисковикам (rel="nofollow")
+                    </a>
+                </li>
 
-        <li>
-            <a href="https://kubsu.ru/" rel="nofollow">
-                18. Ссылка, по которой запрещён переход поисковикам (rel="nofollow")
-            </a>
-        </li>
-
-        <li>
-            <noindex>
-                <a href="https://kubsu.ru/">19. Ссылка, запрещённая для индексации поисковиками (noindex)</a>
-            </noindex>
-        </li>
-        <li>
-            20. Нумерованный список ссылок с подписями title:
-            <ol>
-                <li><a href="https://kubsu.ru/" title="Главная страница КубГУ">КубГУ — главная</a></li>
-                <li><a href="https://kubsu.ru/ru/abiturient" title="Страница абитуриента">Абитуриенту</a></li>
-                <li><a href="https://kubsu.ru/ru/student" title="Страница студента">Студенту</a></li>
-            </ol>
-        </li>
-        <li>
-            <a href="ftp://user:password@ftp.example.com/file.zip">
-                21. Ссылка на файл на сервере FTP с авторизацией
-            </a>
-        </li>
-    </ul>
-
-    <section>
+                <li>
+                    <noindex>
+                        <a href="https://kubsu.ru/">19. Ссылка, запрещённая для индексации поисковиками (noindex)</a>
+                    </noindex>
+                </li>
+                <li>
+                    20. Нумерованный список ссылок с подписями title:
+                    <ol>
+                        <li><a href="https://kubsu.ru/" title="Главная страница КубГУ">КубГУ — главная</a></li>
+                        <li><a href="https://kubsu.ru/ru/abiturient" title="Страница абитуриента">Абитуриенту</a></li>
+                        <li><a href="https://kubsu.ru/ru/student" title="Страница студента">Студенту</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="ftp://user:password@ftp.example.com/file.zip">
+                        21. Ссылка на файл на сервере FTP с авторизацией
+                    </a>
+                </li>
+             </ul>
+            </section>
+    <section class="table-section">
         <h2>Таблица</h2>
         <table>
             <caption>Пример таблици с объединенными ячейками</caption>
@@ -188,7 +190,7 @@
             </tbody>
         </table>
     </section>
-
+</div>
 
     <h2 id="form-section">Форма</h2>
     <form action="/"
