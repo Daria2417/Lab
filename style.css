@@ -56,14 +56,10 @@ nav a:hover {
 
 /* контент */
 .content {
+    width:100%;
     max-width: 960px;
     margin: 0 auto;
     padding: 20px 15px;
-}
-
-.content{
-    width:100%;
-    padding:20px 15px;
 }
 
 .content-wrapper{
@@ -78,7 +74,7 @@ table {
     margin: 15px 0;
 }
 
-.table-srction{
+.table-section{
     order:1;
 }
 .links-section{
