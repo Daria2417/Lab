@@ -18,11 +18,12 @@ header {
 }
 
 .header-inner {
-    max-width: 960px;
-    margin: 0 auto;
+    /* max-width: 960px;
+    margin: 0 auto; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     padding: 0 15px;
 }
 
@@ -32,18 +33,23 @@ header {
 }
 
 /* меню */
-nav {
-    margin-left: auto;
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    text-algin:center;
+    gap: 10px;
+    
 }
 
-nav a {
+.main-nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-    padding: 5px 10px;
+    padding: 8px;
+    background: ;
     border-radius: 4px;
 }
-
 nav a:hover {
     background: #3a0c5b;
 }
@@ -55,11 +61,28 @@ nav a:hover {
     padding: 20px 15px;
 }
 
+.content{
+    width:100%;
+    padding:20px 15px;
+}
+
+.content-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap: 30px;
+}
 /* таблица */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 15px 0;
+}
+
+.table-srction{
+    order:1;
+}
+.links-section{
+    order:2;
 }
 
 caption {
@@ -92,9 +115,39 @@ footer {
     margin-top: 30px;
 }
 
-
-footer p {
+/* footer p {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
+} */
+
+@media (min-width:768px) {
+    .header-inner{
+    flex-direction: row;
+    max-width:960px;
+    margin:0 auto;
+    justify-content: space-between;
+    }
+    .main-nav{
+    flex-direction: row;
+    width: auto;
+    gap: 20px;
+    }
+
+    .main-nav a {
+        background: transparent;
+    }
+    .content-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .table-section{
+        order:0;
+        width:100%;
+    }
+    .links-section{
+        order:0;
+        width:100%;
+    }
 }
+
