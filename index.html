@@ -10,18 +10,19 @@
     <!-- ---------- -->
     <header>
         <div class = "header - inner">
-            <nav class="main-nav">
+                <div class="logo-row">
                 <a>
-                    <img src=image.png>
-                        <tyle="width: 150px; vertical-align: middle;>
+                    <img src="image.png" alt="Логотип" style="width:90px; vertical-align: middle;">
+                    <!-- <img src=image.png>
+                        <tyle="width: 150px; vertical-align: middle;> -->
                 </a>
                 <span class = "site-name"> Название сайта</span>
-                <nav>
-                    <a href = "https://daria2417.github.io/Lab/">ссылка 1</a>
-                    <a href = "https://daria2417.github.io/Lab/">ссылка 2</a>
-                    <a href = "https://daria2417.github.io/Lab/">ссылка 3</a>
+                </div>
+                <nav class ="main-nav">
+                    <a href = "#table-section">Таблица</a>
+                    <a href = "#form-section">Форма</a>
+                    <a href = "https://daria2417.github.io/Lab/">Меню</a>
                 </nav>
-            </nav>
         </div>
     </header>
 
@@ -142,7 +143,8 @@
              </ul>
             </section>
     <section class="table-section">
-        <h2>Таблица</h2>
+        
+        <h2 id ="table-section">Таблица</h2>
         <table>
             <caption>Пример таблици с объединенными ячейками</caption>
             <thead>
@@ -166,14 +168,13 @@
                     <td>Ячейка 2-4</td>
                 </tr>
                 <tr>
-                    <td rowspan="3">Объединено по горизонтали</td>
-                    <td>Ячейка 3-4</td>
+                    <td rowspan="2">Объединено по горизонтали</td>
+                    <td colspan="3"> Ячейка 3-4</td>
                 </tr>
                 <tr>
                     <td>Ячейка 4-1</td>
                     <td>Ячейка 4-2</td>
                     <td>Ячейка 4-3</td>
-                    <td>Ячейка 4-4</td>
                 </tr>
                 <tr>
                     <td>Ячейка 5-1</td>
@@ -264,6 +265,6 @@
     <!-- ---------- -->
 
 </main>
-<footer><p>(с) Сергей Синица</p></footer>
+<footer><p>Павлова Д.И.</p></footer>
 </body>
 </html>
