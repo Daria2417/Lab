@@ -12,21 +12,26 @@ body {
 /* шапка */
 header {
     width: 100%;
-    background: #3a0c5b;
+    background: #055a4f;
     color: white;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 .header-inner {
-    /* max-width: 960px;
-    margin: 0 auto; */
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 0 15px;
 }
-
+.logo-row{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+}
 .site-name {
     font-size: 22px;
     font-weight: bold;
@@ -35,23 +40,26 @@ header {
 /* меню */
 .main-nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-    text-algin:center;
-    gap: 10px;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
     
 }
 
 .main-nav a {
     color: white;
     text-decoration: none;
-    padding: 8px;
-    background: ;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.1);
     border-radius: 4px;
 }
+
+.main-nav a:hover{
+    background: rgba(255,255,255,0.1);
+}
 nav a:hover {
-    background: #3a0c5b;
+    background: #055a4f;
 }
 
 /* контент */
@@ -71,7 +79,7 @@ nav a:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .table-section{
@@ -88,23 +96,25 @@ caption {
 }
 
 th, td {
-    border: 1px solid #3a0c5b;
-    padding: 8px 12px;
-    text-align: left;
+    border: 1px solid #055a4f;
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align:middle;
 }
 
 th {
-    background: #3a0c5b;
+    background: #055a4f;
     color: white;
+    font-weight: bold;
 }
 
-tbody tr:nth-child(odd)  { background: #8b66a6; }
+tbody tr:nth-child(odd)  { background: #41be9f; }
 tbody tr:nth-child(even) { background: #ffffff; }
 
 /* подвал */
 footer {
     width: 100%;
-    background: #3a0c5b;
+    background: #055a4f;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -146,4 +156,3 @@ footer {
         width:100%;
     }
 }
-
