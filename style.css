@@ -3,10 +3,10 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    width:100%;
 }
 
 /* шапка */
@@ -14,7 +14,7 @@ header {
     width: 100%;
     background: #055a4f;
     color: white;
-    padding: 25px 0;
+    padding: 20px;
 }
 
 .header-inner {
@@ -40,27 +40,50 @@ header {
 /* меню */
 .main-nav {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width:100%;
     
 }
-
 .main-nav a {
+    display: block;
+    width:100%;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.1);
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    background: rgba(255,255,255,0.1);
+    padding: 8px 15px;
     border-radius: 4px;
+    text-align: center;
 }
-
 .main-nav a:hover{
     background: rgba(255,255,255,0.1);
 }
-nav a:hover {
-    background: #055a4f;
+/* .nav-links{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 15px;
 }
+
+.nav-links a{
+    display:box;
+    width:fit-content;
+    background-color: #055a4f;
+    color:#ffffff;
+    padding:8px 15px;
+    text-decoration: none;
+}
+
+
+
+.main-nav a:hover{
+    background: rgba(255,255,255,0.1);
+} */
+/* nav a:hover {
+    background: #055a4f;
+} */
 
 /* контент */
 .content {
@@ -127,21 +150,22 @@ footer {
     padding: 0 15px;
 } */
 
-@media (min-width:768px) {
+@media (min-width:600px) {
     .header-inner{
-    flex-direction: row;
-    max-width:960px;
+    flex-direction: column;
+    /* max-width:960px;
     margin:0 auto;
-    justify-content: space-between;
+    justify-content: space-between; */
     }
     .main-nav{
     flex-direction: row;
-    width: auto;
-    gap: 20px;
+    justify-content: center;
+    width:auto;
+    gap: 15px;
     }
 
     .main-nav a {
-        background: transparent;
+        width:auto;
     }
     .content-wrapper{
         flex-direction: row;
