@@ -60,32 +60,7 @@ header {
 .main-nav a:hover{
     background: rgba(255,255,255,0.1);
 }
-/* .nav-links{
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    margin-top: 15px;
-}
 
-.nav-links a{
-    display:box;
-    width:fit-content;
-    background-color: #055a4f;
-    color:#ffffff;
-    padding:8px 15px;
-    text-decoration: none;
-}
-
-
-
-.main-nav a:hover{
-    background: rgba(255,255,255,0.1);
-} */
-/* nav a:hover {
-    background: #055a4f;
-} */
-
-/* контент */
 .content {
     width:100%;
     max-width: 960px;
@@ -144,18 +119,10 @@ footer {
     margin-top: 30px;
 }
 
-/* footer p {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
-} */
 
 @media (min-width:600px) {
     .header-inner{
     flex-direction: column;
-    /* max-width:960px;
-    margin:0 auto;
-    justify-content: space-between; */
     }
     .main-nav{
     flex-direction: row;
