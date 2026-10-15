@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel = "stylesheet" href = "style.css">
 </head>
-<body>
+<body class="bg-site">
     <!-- ---------- -->
     <header class="bg-custom-green text-while py-3">
 
@@ -19,7 +19,7 @@
                     <!-- style="width:90px; vertical-align: middle;"> -->
                     <!-- <img src=image.png>
                         <tyle="width: 150px; vertical-align: middle;> -->
-                <span class = "fs-4 fw-bold"> Название сайта</span>
+                <span class = "fs-4 fw-bold text-light"> Название сайта</span>
             </div>
                 <nav class ="d-flex flex-row gap-2">
                     <a href = "#table-section" class="btn btn-outline-light">Таблица</a>
@@ -32,11 +32,11 @@
 
     <main class = "container my-4">
         <section class="row mb-5">
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-center">
             <section class="link-section">
             <h1>Задание 1</h1>
             
-            <ul>
+            <ul class="w-auto text-start">
                 <li>
                     <a href="http://kubsu.ru/">1. Абсолютная гиперссылка на главную страницу kubsu.ru (http)</a>
                 </li>
@@ -239,7 +239,7 @@
 
     <div class="mb-3">
         <label for="languages" class="form-label">Любимый язык программирования:</label>
-        <select class="form-select" id="languages" name="languages[]" multiple size="11">
+        <select class="form-select" id="languages" name="languages[]" >
                 <option value="Pascal">Pascal</option>
                 <option value="C">C</option>
                 <option value="C++">C++</option>
@@ -266,7 +266,7 @@
             </label>
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">Сохранить</button>
+        <button type="submit" class="btn btn-custom w-100">Сохранить</button>
 
         </form>
     </div>
