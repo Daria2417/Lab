@@ -4,7 +4,23 @@
 } */
 
 .bg-custom-green{
-    background-color: #055a4f; !important;
+    background-color: #846c62; !important;
+}
+.bg-site{
+    background-color: #f1e7e2; !important;
+}
+
+a{
+    color:#3a2f2b; 
+    text-decoration-color:#846c62;
+    text-decoration-thickness:2px;
+    text-underline-offset: 3px;
+}
+
+.btn-custom{
+    background-color: #846c62;
+    border-color: #f1e7e2;
+    color: #f1e7e2;
 }
 
 .table th, .table td{
