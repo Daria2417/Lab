@@ -1,16 +1,30 @@
 /* сброс */
-* {
+/* * {
     box-sizing: border-box;
+} */
+
+.bg-custom-green{
+    background-color: #055a4f; !important;
 }
 
+.table th, .table td{
+    vertical-align: middle0;
+    text-align: center;
+}
+
+.map-container img{
+    max-width: 100%;
+    height: auto;
+}
+/* 
 html,body {
     margin: 0;
     padding: 0;
     width:100%;
-}
+} */
 
 /* шапка */
-header {
+/* header {
     width: 100%;
     background: #055a4f;
     color: white;
@@ -25,8 +39,8 @@ header {
     align-items: center;
     gap: 20px;
     padding: 0 15px;
-}
-.logo-row{
+} */
+/* .logo-row{
     display: flex;
     align-items: center;
     gap: 0px;
@@ -35,10 +49,10 @@ header {
 .site-name {
     font-size: 22px;
     font-weight: bold;
-}
+} */
 
 /* меню */
-.main-nav {
+/* .main-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,9 +73,9 @@ header {
 }
 .main-nav a:hover{
     background: rgba(255,255,255,0.1);
-}
+} */
 
-.content {
+/* .content {
     width:100%;
     max-width: 960px;
     margin: 0 auto;
@@ -74,13 +88,13 @@ header {
     gap: 30px;
 }
 /* таблица */
-table {
+/* table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-}
+} */
 
-.table-section{
+/* .table-section{
     order:1;
 }
 .links-section{
@@ -91,9 +105,9 @@ caption {
     font-weight: bold;
     margin-bottom: 8px;
     text-align: left;
-}
+} */
 
-th, td {
+/* th, td {
     border: 1px solid #055a4f;
     padding: 10px 15px;
     text-align: center;
@@ -104,23 +118,23 @@ th {
     background: #055a4f;
     color: white;
     font-weight: bold;
-}
-
+} */ */
+/* 
 tbody tr:nth-child(odd)  { background: #41be9f; }
-tbody tr:nth-child(even) { background: #ffffff; }
+tbody tr:nth-child(even) { background: #ffffff; } */
 
 /* подвал */
-footer {
+/* footer {
     width: 100%;
     background: #055a4f;
     color: white;
     text-align: center;
     padding: 15px 0;
     margin-top: 30px;
-}
+} */
 
 
-@media (min-width:600px) {
+/* @media (min-width:600px) {
     .header-inner{
     flex-direction: column;
     }
@@ -146,4 +160,4 @@ footer {
         order:0;
         width:100%;
     }
-}
+} */
